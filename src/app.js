@@ -18,11 +18,6 @@ app.use(express.json());
 // test route
 app.get("/", (req, res) => {
     res.send("Backend is live");
-
-    res.json({
-        message: "Auth working",
-        user: req.user
-    });
 });
 
 // routes
