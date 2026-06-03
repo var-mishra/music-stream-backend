@@ -16,8 +16,8 @@ const app = express();
 app.use(express.json());
 
 // test route
-app.get("/", authMidd, (req, res) => {
-    console.log("this is the homepage working");
+app.get("/", (req, res) => {
+    res.send("Backend is live");
 
     res.json({
         message: "Auth working",
